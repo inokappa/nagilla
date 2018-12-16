@@ -1,0 +1,2 @@
+export NAGIOS_USER=
+export NAGIOS_PASS=

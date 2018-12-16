@@ -1,0 +1,6 @@
+.envrc
+pkg/
+vendor/
+tasks.pyc
+tmp/
+config.json

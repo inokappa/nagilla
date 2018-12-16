@@ -8,7 +8,7 @@
 
 ## インストール
 
-環境に応じたバイナリを[リリースページ]()からダウンロードして, パスが通っているディレクトリに保存する.
+環境に応じたバイナリを[リリースページ](https://github.com/inokappa/nagilla/releases)からダウンロードして, パスが通っているディレクトリに保存する.
 
 * nagilla_darwin_amd64 ... macOS 向け
 * nagilla_linux_amd64 ... Linux 向け
@@ -72,7 +72,30 @@ nagilla -config=${設定ファイルのパス} -check
 以下のように Nagios の Host Status が JSON 返却される.
 
 ```json
-
+{
+  "Host": "localhost",
+  "Status": {
+    "Active Checks": "ENABLED",
+    "Check Latency / Duration": "0.001 / 4.152 seconds",
+    "Check Type": "ACTIVE",
+    "Current Attempt": "1/10  (HARD state)",
+    "Event Handler": "ENABLED",
+    "Flap Detection": "ENABLED",
+    "Host Status": "UP",
+    "In Scheduled Downtime": "NO",
+    "Is This Host Flapping": "NO",
+    "Last Check Time": "12-16-2018 14:36:01",
+    "Last Notification": "N/A (notification 0)",
+    "Last State Change": "12-16-2018 10:37:29",
+    "Last Update": "12-16-2018 14:37:47  ( 0d  0h  0m  8s ago)",
+    "Next Scheduled Active Check": "12-16-2018 14:41:01",
+    "Notifications": "DISABLED",
+    "Obsessing": "ENABLED",
+    "Passive Checks": "ENABLED",
+    "Performance Data": "rta=0.111000ms;3000.000000;5000.000000;0.000000 pl=0%;80;100;0",
+    "Status Information": "PING OK - Packet loss = 0%, RTA = 0.11 ms"
+  }
+}
 ```
 
 ### 通知を無効化

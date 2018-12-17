@@ -25,7 +25,6 @@ var (
 	argVersion    = flag.Bool("version", false, "バージョンを出力.")
 	argEnable     = flag.Bool("enable", false, "通知を有効化.")
 	argDisable    = flag.Bool("disable", false, "通知を無効化.")
-	argQuiet      = flag.Bool("quiet", false, "Slack 通知を無効化.")
 	argCheck      = flag.Bool("check", false, "通知を状態を確認.")
 	argHosts      = flag.String("hosts", "", "通知を操作するホスト名を指定.")
 	argService    = flag.String("service", "", "通知を操作するサービス名を指定.")
